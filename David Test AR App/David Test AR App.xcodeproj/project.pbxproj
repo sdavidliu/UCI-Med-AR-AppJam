@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E86DAAC61FAC4C880072B27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAAC51FAC4C880072B27F /* AppDelegate.swift */; };
+		E86DAAC81FAC4C880072B27F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E86DAAC71FAC4C880072B27F /* art.scnassets */; };
+		E86DAACA1FAC4C880072B27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAAC91FAC4C880072B27F /* ViewController.swift */; };
+		E86DAACD1FAC4C880072B27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DAACB1FAC4C880072B27F /* Main.storyboard */; };
+		E86DAACF1FAC4C880072B27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86DAACE1FAC4C880072B27F /* Assets.xcassets */; };
+		E86DAAD21FAC4C880072B27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DAAD01FAC4C880072B27F /* LaunchScreen.storyboard */; };
+		E86DAADD1FAC4C880072B27F /* David_Test_AR_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAADC1FAC4C880072B27F /* David_Test_AR_AppTests.swift */; };
+		E86DAAE81FAC4C880072B27F /* David_Test_AR_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DAAE71FAC4C880072B27F /* David_Test_AR_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E86DAAD91FAC4C880072B27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E86DAABA1FAC4C880072B27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E86DAAC11FAC4C880072B27F;
+			remoteInfo = "David Test AR App";
+		};
+		E86DAAE41FAC4C880072B27F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E86DAABA1FAC4C880072B27F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E86DAAC11FAC4C880072B27F;
+			remoteInfo = "David Test AR App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E86DAAC21FAC4C880072B27F /* David Test AR App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "David Test AR App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86DAAC51FAC4C880072B27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E86DAAC71FAC4C880072B27F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		E86DAAC91FAC4C880072B27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E86DAACC1FAC4C880072B27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E86DAACE1FAC4C880072B27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E86DAAD11FAC4C880072B27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E86DAAD31FAC4C880072B27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86DAAD81FAC4C880072B27F /* David Test AR AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "David Test AR AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86DAADC1FAC4C880072B27F /* David_Test_AR_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = David_Test_AR_AppTests.swift; sourceTree = "<group>"; };
+		E86DAADE1FAC4C880072B27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86DAAE31FAC4C880072B27F /* David Test AR AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "David Test AR AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86DAAE71FAC4C880072B27F /* David_Test_AR_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = David_Test_AR_AppUITests.swift; sourceTree = "<group>"; };
+		E86DAAE91FAC4C880072B27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E86DAABF1FAC4C880072B27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86DAAD51FAC4C880072B27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86DAAE01FAC4C880072B27F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E86DAAB91FAC4C880072B27F = {
+			isa = PBXGroup;
+			children = (
+				E86DAAC41FAC4C880072B27F /* David Test AR App */,
+				E86DAADB1FAC4C880072B27F /* David Test AR AppTests */,
+				E86DAAE61FAC4C880072B27F /* David Test AR AppUITests */,
+				E86DAAC31FAC4C880072B27F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E86DAAC31FAC4C880072B27F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E86DAAC21FAC4C880072B27F /* David Test AR App.app */,
+				E86DAAD81FAC4C880072B27F /* David Test AR AppTests.xctest */,
+				E86DAAE31FAC4C880072B27F /* David Test AR AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E86DAAC41FAC4C880072B27F /* David Test AR App */ = {
+			isa = PBXGroup;
+			children = (
+				E86DAAC51FAC4C880072B27F /* AppDelegate.swift */,
+				E86DAAC71FAC4C880072B27F /* art.scnassets */,
+				E86DAAC91FAC4C880072B27F /* ViewController.swift */,
+				E86DAACB1FAC4C880072B27F /* Main.storyboard */,
+				E86DAACE1FAC4C880072B27F /* Assets.xcassets */,
+				E86DAAD01FAC4C880072B27F /* LaunchScreen.storyboard */,
+				E86DAAD31FAC4C880072B27F /* Info.plist */,
+			);
+			path = "David Test AR App";
+			sourceTree = "<group>";
+		};
+		E86DAADB1FAC4C880072B27F /* David Test AR AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E86DAADC1FAC4C880072B27F /* David_Test_AR_AppTests.swift */,
+				E86DAADE1FAC4C880072B27F /* Info.plist */,
+			);
+			path = "David Test AR AppTests";
+			sourceTree = "<group>";
+		};
+		E86DAAE61FAC4C880072B27F /* David Test AR AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E86DAAE71FAC4C880072B27F /* David_Test_AR_AppUITests.swift */,
+				E86DAAE91FAC4C880072B27F /* Info.plist */,
+			);
+			path = "David Test AR AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E86DAAC11FAC4C880072B27F /* David Test AR App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86DAAEC1FAC4C880072B27F /* Build configuration list for PBXNativeTarget "David Test AR App" */;
+			buildPhases = (
+				E86DAABE1FAC4C880072B27F /* Sources */,
+				E86DAABF1FAC4C880072B27F /* Frameworks */,
+				E86DAAC01FAC4C880072B27F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "David Test AR App";
+			productName = "David Test AR App";
+			productReference = E86DAAC21FAC4C880072B27F /* David Test AR App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E86DAAD71FAC4C880072B27F /* David Test AR AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86DAAEF1FAC4C880072B27F /* Build configuration list for PBXNativeTarget "David Test AR AppTests" */;
+			buildPhases = (
+				E86DAAD41FAC4C880072B27F /* Sources */,
+				E86DAAD51FAC4C880072B27F /* Frameworks */,
+				E86DAAD61FAC4C880072B27F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E86DAADA1FAC4C880072B27F /* PBXTargetDependency */,
+			);
+			name = "David Test AR AppTests";
+			productName = "David Test AR AppTests";
+			productReference = E86DAAD81FAC4C880072B27F /* David Test AR AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E86DAAE21FAC4C880072B27F /* David Test AR AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86DAAF21FAC4C880072B27F /* Build configuration list for PBXNativeTarget "David Test AR AppUITests" */;
+			buildPhases = (
+				E86DAADF1FAC4C880072B27F /* Sources */,
+				E86DAAE01FAC4C880072B27F /* Frameworks */,
+				E86DAAE11FAC4C880072B27F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E86DAAE51FAC4C880072B27F /* PBXTargetDependency */,
+			);
+			name = "David Test AR AppUITests";
+			productName = "David Test AR AppUITests";
+			productReference = E86DAAE31FAC4C880072B27F /* David Test AR AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E86DAABA1FAC4C880072B27F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "David Liu";
+				TargetAttributes = {
+					E86DAAC11FAC4C880072B27F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					E86DAAD71FAC4C880072B27F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E86DAAC11FAC4C880072B27F;
+					};
+					E86DAAE21FAC4C880072B27F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E86DAAC11FAC4C880072B27F;
+					};
+				};
+			};
+			buildConfigurationList = E86DAABD1FAC4C880072B27F /* Build configuration list for PBXProject "David Test AR App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E86DAAB91FAC4C880072B27F;
+			productRefGroup = E86DAAC31FAC4C880072B27F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E86DAAC11FAC4C880072B27F /* David Test AR App */,
+				E86DAAD71FAC4C880072B27F /* David Test AR AppTests */,
+				E86DAAE21FAC4C880072B27F /* David Test AR AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E86DAAC01FAC4C880072B27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DAAC81FAC4C880072B27F /* art.scnassets in Resources */,
+				E86DAAD21FAC4C880072B27F /* LaunchScreen.storyboard in Resources */,
+				E86DAACF1FAC4C880072B27F /* Assets.xcassets in Resources */,
+				E86DAACD1FAC4C880072B27F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86DAAD61FAC4C880072B27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86DAAE11FAC4C880072B27F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E86DAABE1FAC4C880072B27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DAACA1FAC4C880072B27F /* ViewController.swift in Sources */,
+				E86DAAC61FAC4C880072B27F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86DAAD41FAC4C880072B27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DAADD1FAC4C880072B27F /* David_Test_AR_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E86DAADF1FAC4C880072B27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DAAE81FAC4C880072B27F /* David_Test_AR_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E86DAADA1FAC4C880072B27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E86DAAC11FAC4C880072B27F /* David Test AR App */;
+			targetProxy = E86DAAD91FAC4C880072B27F /* PBXContainerItemProxy */;
+		};
+		E86DAAE51FAC4C880072B27F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E86DAAC11FAC4C880072B27F /* David Test AR App */;
+			targetProxy = E86DAAE41FAC4C880072B27F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E86DAACB1FAC4C880072B27F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86DAACC1FAC4C880072B27F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E86DAAD01FAC4C880072B27F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86DAAD11FAC4C880072B27F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E86DAAEA1FAC4C880072B27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E86DAAEB1FAC4C880072B27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E86DAAED1FAC4C880072B27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RB738V9E;
+				INFOPLIST_FILE = "David Test AR App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dave-Joe.David-Test-AR-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E86DAAEE1FAC4C880072B27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RB738V9E;
+				INFOPLIST_FILE = "David Test AR App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dave-Joe.David-Test-AR-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E86DAAF01FAC4C880072B27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RB738V9E;
+				INFOPLIST_FILE = "David Test AR AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dave-Joe.David-Test-AR-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/David Test AR App.app/David Test AR App";
+			};
+			name = Debug;
+		};
+		E86DAAF11FAC4C880072B27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RB738V9E;
+				INFOPLIST_FILE = "David Test AR AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dave-Joe.David-Test-AR-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/David Test AR App.app/David Test AR App";
+			};
+			name = Release;
+		};
+		E86DAAF31FAC4C880072B27F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RB738V9E;
+				INFOPLIST_FILE = "David Test AR AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dave-Joe.David-Test-AR-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "David Test AR App";
+			};
+			name = Debug;
+		};
+		E86DAAF41FAC4C880072B27F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68RB738V9E;
+				INFOPLIST_FILE = "David Test AR AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dave-Joe.David-Test-AR-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "David Test AR App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E86DAABD1FAC4C880072B27F /* Build configuration list for PBXProject "David Test AR App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DAAEA1FAC4C880072B27F /* Debug */,
+				E86DAAEB1FAC4C880072B27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86DAAEC1FAC4C880072B27F /* Build configuration list for PBXNativeTarget "David Test AR App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DAAED1FAC4C880072B27F /* Debug */,
+				E86DAAEE1FAC4C880072B27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86DAAEF1FAC4C880072B27F /* Build configuration list for PBXNativeTarget "David Test AR AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DAAF01FAC4C880072B27F /* Debug */,
+				E86DAAF11FAC4C880072B27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86DAAF21FAC4C880072B27F /* Build configuration list for PBXNativeTarget "David Test AR AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DAAF31FAC4C880072B27F /* Debug */,
+				E86DAAF41FAC4C880072B27F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E86DAABA1FAC4C880072B27F /* Project object */;
+}
