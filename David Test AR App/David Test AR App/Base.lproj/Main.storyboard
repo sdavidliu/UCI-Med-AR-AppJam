@@ -25,20 +25,51 @@
             </objects>
             <point key="canvasLocation" x="721" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Simeon-->
         <scene sceneID="Dcl-ah-7DU">
             <objects>
-                <viewController id="18P-VT-krl" sceneMemberID="viewController">
+                <viewController id="18P-VT-krl" customClass="Simeon" customModule="David_Test_AR_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdQ-tz-ZWv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vat-fa-oG4">
+                                <rect key="frame" x="127.5" y="237" width="120" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.82155450500714644" blue="0.95544357719977013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="3mr-Nu-xXB"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="butaction1:" destination="18P-VT-krl" eventType="touchUpInside" id="3Il-B8-sui"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Simeon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-SE-RoB">
+                                <rect key="frame" x="139" y="111" width="96" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86341176254591967" green="1" blue="0.58147887606136162" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cYa-Yt-6t5" firstAttribute="bottom" secondItem="vat-fa-oG4" secondAttribute="bottom" constant="400" id="6mc-fu-YaR"/>
+                            <constraint firstItem="V0c-SE-RoB" firstAttribute="centerX" secondItem="cYa-Yt-6t5" secondAttribute="centerX" id="BgC-YP-eUT"/>
+                            <constraint firstItem="V0c-SE-RoB" firstAttribute="top" secondItem="cYa-Yt-6t5" secondAttribute="top" constant="60" id="krd-k5-UgH"/>
+                            <constraint firstItem="vat-fa-oG4" firstAttribute="centerX" secondItem="cYa-Yt-6t5" secondAttribute="centerX" id="o0X-e6-o37"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cYa-Yt-6t5"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="vat-fa-oG4" id="WsJ-um-YXf"/>
+                        <outlet property="sim" destination="V0c-SE-RoB" id="Vkf-kL-yVT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akV-oV-VOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="132"/>
+            <point key="canvasLocation" x="-23.199999999999999" y="131.78410794602701"/>
         </scene>
     </scenes>
 </document>
