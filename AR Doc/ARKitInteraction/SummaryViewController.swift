@@ -13,6 +13,7 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
 
     @IBOutlet weak var sendEmailButton: UIButton!
     @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var summaryTextView: UITextView!
     
@@ -21,6 +22,7 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
         
         sendEmailButton.layer.cornerRadius = 10
         homeButton.layer.cornerRadius = 10
+        backButton.layer.cornerRadius = 10
         
         summaryLabel.text = "Summary: Back pain\nLocation: Lower back\nRadiation: No\nSeverity (on scale of 10): 7\nOnset: 2 weeks ago\nDuration: 30 minutes\nFrequency: 3 times a day\nProgression: More frequently each day\nSymptoms: Pain in muscles and bones. Occasional muscle spasms. Back Joint dysfunction."
         summaryLabel.sizeToFit()
@@ -92,6 +94,10 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
     
     @IBAction func homeAction(_ sender: Any) {
         self.performSegue(withIdentifier: "unwindToViewController1", sender: self)
+    }
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {

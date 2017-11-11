@@ -122,6 +122,12 @@ class ViewController: UIViewController {
 
         session.pause()
 	}
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        restartExperience()
+    }
 
     // MARK: - Scene content setup
 
