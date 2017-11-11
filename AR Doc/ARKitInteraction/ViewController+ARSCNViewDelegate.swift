@@ -41,13 +41,14 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
+        /*
         DispatchQueue.main.async {
             self.statusViewController.cancelScheduledMessage(for: .planeEstimation)
             self.statusViewController.showMessage("SURFACE DETECTED")
             if self.virtualObjectLoader.loadedObjects.isEmpty {
                 self.statusViewController.scheduleMessage("TAP + TO PLACE AN OBJECT", inSeconds: 7.5, messageType: .contentPlacement)
             }
-        }
+        }*/
         updateQueue.async {
             for object in self.virtualObjectLoader.loadedObjects {
                 object.adjustOntoPlaneAnchor(planeAnchor, using: node)
@@ -99,15 +100,20 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
         guard let frame = sceneView.session.currentFrame else {return}
         guard isReadyForDrawing(trackingState: frame.camera.trackingState) else {return}
         
-        let drawingNode = DynamicGeometryNode(color: UIColor.blue, lineWidth: 0.002)
-        sceneView.scene.rootNode.addChildNode(drawingNode)
-        drawingNodes.append(drawingNode)
+        if (hasModel == true) {
+            let drawingNode = DynamicGeometryNode(color: UIColor.blue, lineWidth: 0.002)
+            sceneView.scene.rootNode.addChildNode(drawingNode)
+            drawingNodes.append(drawingNode)
+        }
         
         isTouching = true
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         isTouching = false
+        if (hasModel == true) {
+            statusViewController.showMessage("POSITION PHONE AND TAKE PICTURE")
+        }
     }
     
     func sessionWasInterrupted(_ session: ARSession) {

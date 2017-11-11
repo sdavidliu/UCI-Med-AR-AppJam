@@ -23,6 +23,10 @@ extension ViewController: VirtualObjectSelectionViewControllerDelegate {
             return
         }
         
+        self.hasModel = true
+        self.statusViewController.cancelAllScheduledMessages()
+        self.statusViewController.showMessage("HOLD SCREEN AND MOVE PHONE TO DRAW", autoHide: false)
+        
         virtualObjectInteraction.selectedObject = virtualObject
         virtualObject.setPosition(focusSquarePosition, relativeTo: cameraTransform, smoothMovement: false)
         
@@ -41,7 +45,7 @@ extension ViewController: VirtualObjectSelectionViewControllerDelegate {
             }
         })
 
-        displayObjectLoadingUI()
+        //displayObjectLoadingUI()
     }
     
     func virtualObjectSelectionViewController(_: VirtualObjectSelectionViewController, didDeselectObject object: VirtualObject) {

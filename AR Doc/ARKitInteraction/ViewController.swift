@@ -61,6 +61,8 @@ class ViewController: UIViewController {
     
     var isTouching = false
     
+    var hasModel = false
+    
     /// Convenience accessor for the session owned by ARSCNView.
     var session: ARSession {
         return sceneView.session
@@ -101,10 +103,10 @@ class ViewController: UIViewController {
             self.restartExperience()
         }
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showVirtualObjectSelectionViewController))
+        //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showVirtualObjectSelectionViewController))
         // Set the delegate to ensure this gesture is only used when there are no virtual objects in the scene.
-        tapGesture.delegate = self
-        sceneView.addGestureRecognizer(tapGesture)
+        //tapGesture.delegate = self
+        //sceneView.addGestureRecognizer(tapGesture)
     }
 
 	override func viewDidAppear(_ animated: Bool) {
@@ -115,6 +117,8 @@ class ViewController: UIViewController {
 
         // Start the `ARSession`.
         resetTracking()
+        
+        self.statusViewController.showMessage("INITIALIZING")
 	}
 	
 	override func viewWillDisappear(_ animated: Bool) {
@@ -144,6 +148,7 @@ class ViewController: UIViewController {
         camera.exposureOffset = -1
         camera.minimumExposure = -1
         camera.maximumExposure = 3
+        
     }
 
     // MARK: - Session management
@@ -154,7 +159,7 @@ class ViewController: UIViewController {
         configuration.planeDetection = .horizontal
 		session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
 
-        statusViewController.scheduleMessage("FIND A SURFACE TO PLACE AN OBJECT", inSeconds: 7.5, messageType: .planeEstimation)
+        //statusViewController.scheduleMessage("FIND A SURFACE TO PLACE AN OBJECT", inSeconds: 75.0, messageType: .planeEstimation)
         
         addObjectButton.isHidden = false
 	}
@@ -170,7 +175,7 @@ class ViewController: UIViewController {
             focusSquare.hide()
         } else {
             focusSquare.unhide()
-            statusViewController.scheduleMessage("TRY MOVING LEFT OR RIGHT", inSeconds: 5.0, messageType: .focusSquare)
+            //statusViewController.scheduleMessage("TRY MOVING LEFT OR RIGHT", inSeconds: 5.0, messageType: .focusSquare)
         }
         
         // We should always have a valid world position unless the sceen is just being initialized.
@@ -192,6 +197,9 @@ class ViewController: UIViewController {
             } else {
                 self.focusSquare.state = .featuresDetected(anchorPosition: worldPosition, camera: camera)
             }
+        }
+        if (hasModel == false) {
+            statusViewController.showMessage("SURFACE DETECTED, TAP + TO PLACE OBJECT")
         }
         addObjectButton.isHidden = false
         statusViewController.cancelScheduledMessage(for: .focusSquare)

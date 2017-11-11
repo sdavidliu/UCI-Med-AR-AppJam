@@ -95,12 +95,12 @@ class StatusViewController: UIViewController {
     // MARK: - ARKit
     
 	func showTrackingQualityInfo(for trackingState: ARCamera.TrackingState, autoHide: Bool) {
-		showMessage(trackingState.presentationString, autoHide: autoHide)
+		//showMessage(trackingState.presentationString, autoHide: autoHide)
 	}
 	
 	func escalateFeedback(for trackingState: ARCamera.TrackingState, inSeconds seconds: TimeInterval) {
         cancelScheduledMessage(for: .trackingStateEscalation)
-
+        /*
 		let timer = Timer.scheduledTimer(withTimeInterval: seconds, repeats: false, block: { [weak self] _ in
             self?.cancelScheduledMessage(for: .trackingStateEscalation)
 
@@ -112,7 +112,7 @@ class StatusViewController: UIViewController {
             self?.showMessage(message, autoHide: false)
 		})
 
-        timers[.trackingStateEscalation] = timer
+        timers[.trackingStateEscalation] = timer*/
     }
     
     // MARK: - IBActions

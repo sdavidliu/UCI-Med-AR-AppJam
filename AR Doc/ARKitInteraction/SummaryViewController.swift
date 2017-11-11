@@ -47,6 +47,7 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
             var doctorEmail = ""
             var ccEmail = ""
             var basicInfo = ""
+            var otherComments = ""
             
             let defaults = UserDefaults.standard
             if (defaults.string(forKey: "name") != "") {
@@ -75,13 +76,16 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
             if (basicInfo != "") {
                 basicInfo = "Basic Info:\n" + basicInfo + "\n"
             }
+            if (summaryTextView.text != "") {
+                otherComments = "\n\nOther comments:\n" + summaryTextView.text
+            }
             
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self;
             mail.setToRecipients([doctorEmail])
             mail.setCcRecipients([ccEmail])
             mail.setSubject("AR Doc App Medical Report")
-            mail.setMessageBody(basicInfo + summaryLabel.text! + "\n\nOther comments:\n" + summaryTextView.text, isHTML: false)
+            mail.setMessageBody(basicInfo + summaryLabel.text! + otherComments, isHTML: false)
             if (defaults.bool(forKey: "picture") == true) {
                 if let image = getSavedImage(named: "fileName") {
                     let imageData: Data = UIImagePNGRepresentation(image)!

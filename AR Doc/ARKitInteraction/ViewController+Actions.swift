@@ -54,15 +54,19 @@ extension ViewController: UIGestureRecognizerDelegate {
     func restartExperience() {
         guard isRestartAvailable, !virtualObjectLoader.isLoading else { return }
         isRestartAvailable = false
-
-        statusViewController.cancelAllScheduledMessages()
-
-        virtualObjectLoader.removeAllVirtualObjects()
         
         for node in drawingNodes {
             node.removeFromParentNode()
         }
         drawingNodes.removeAll()
+        
+        hasModel = false
+        
+        //self.statusViewController.showMessage("FIND SURFACE TO PLACE OBJECT")
+        
+        statusViewController.cancelAllScheduledMessages()
+        
+        virtualObjectLoader.removeAllVirtualObjects()
         
         addObjectButton.setImage(#imageLiteral(resourceName: "add"), for: [])
         addObjectButton.setImage(#imageLiteral(resourceName: "addPressed"), for: [.highlighted])
