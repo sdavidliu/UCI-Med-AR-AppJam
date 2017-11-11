@@ -14,7 +14,7 @@ class Simeon: UIViewController {
     @IBOutlet weak var sim: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+/*
         // Do any additional setup after loading the view.
         
         var request = URLRequest(url: URL(string: "https://secure.getbottlestonight.com/api/v4/venues/460/sections?date=2017-11-08T10:54:38.050-08:00")!)
@@ -35,7 +35,7 @@ class Simeon: UIViewController {
             print("responseString = \(String(describing: responseString))")
         }
         task.resume()
-        
+        */
     }
 
 
