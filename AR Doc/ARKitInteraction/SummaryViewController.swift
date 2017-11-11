@@ -38,15 +38,53 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
     
     @IBAction func testAction(_ sender: Any) {
         if MFMailComposeViewController.canSendMail() {
+            var name = ""
+            var birthday = ""
+            var weight = ""
+            var height = ""
+            var doctorEmail = ""
+            var ccEmail = ""
+            var basicInfo = ""
+            
+            let defaults = UserDefaults.standard
+            if (defaults.string(forKey: "name") != "") {
+                name = defaults.string(forKey: "name")!
+                basicInfo += "Name: " + name + "\n"
+            }
+            if (defaults.string(forKey: "birthday") != "") {
+                birthday = defaults.string(forKey: "birthday")!
+                basicInfo += "Birthday: " + birthday + "\n"
+            }
+            if (defaults.string(forKey: "weight") != "") {
+                weight = defaults.string(forKey: "weight")!
+                basicInfo += "Weight: " + weight + "\n"
+            }
+            if (defaults.string(forKey: "height") != "") {
+                height = defaults.string(forKey: "height")!
+                basicInfo += "Height: " + height + "\n"
+            }
+            if (defaults.string(forKey: "doctoremail") != "") {
+                doctorEmail = defaults.string(forKey: "doctoremail")!
+            }
+            if (defaults.string(forKey: "ccemail") != "") {
+                ccEmail = defaults.string(forKey: "ccemail")!
+            }
+            
+            if (basicInfo != "") {
+                basicInfo = "Basic Info:\n" + basicInfo + "\n"
+            }
+            
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self;
-            mail.setToRecipients(["doctor@kaiser.org"])
-            mail.setCcRecipients(["mom@gmail.com"])
-            mail.setSubject("AR Doc Report")
-            mail.setMessageBody(summaryLabel.text! + "\n\nOther comments:\n" + summaryTextView.text, isHTML: false)
-            if let image = getSavedImage(named: "fileName") {
-                let imageData: Data = UIImagePNGRepresentation(image)!
-                mail.addAttachmentData(imageData, mimeType: "image/png", fileName: "ardocscreenshot")
+            mail.setToRecipients([doctorEmail])
+            mail.setCcRecipients([ccEmail])
+            mail.setSubject("AR Doc App Medical Report")
+            mail.setMessageBody(basicInfo + summaryLabel.text! + "\n\nOther comments:\n" + summaryTextView.text, isHTML: false)
+            if (defaults.bool(forKey: "picture") == true) {
+                if let image = getSavedImage(named: "fileName") {
+                    let imageData: Data = UIImagePNGRepresentation(image)!
+                    mail.addAttachmentData(imageData, mimeType: "image/png", fileName: "ardocscreenshot")
+                }
             }
             self.present(mail, animated: true, completion: nil)
         }

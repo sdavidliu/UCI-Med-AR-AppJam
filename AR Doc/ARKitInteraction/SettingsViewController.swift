@@ -29,6 +29,26 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         heightTextField.delegate = self
         doctorEmailTextField.delegate = self
         ccEmailTextField.delegate = self
+        
+        let defaults = UserDefaults.standard
+        if (defaults.string(forKey: "name") != nil) {
+            nameTextField.text = defaults.string(forKey: "name")
+        }
+        if (defaults.string(forKey: "birthday") != nil) {
+            birthdayTextField.text = defaults.string(forKey: "birthday")
+        }
+        if (defaults.string(forKey: "weight") != nil) {
+            weightTextField.text = defaults.string(forKey: "weight")
+        }
+        if (defaults.string(forKey: "height") != nil) {
+            heightTextField.text = defaults.string(forKey: "height")
+        }
+        if (defaults.string(forKey: "doctoremail") != nil) {
+            doctorEmailTextField.text = defaults.string(forKey: "doctoremail")
+        }
+        if (defaults.string(forKey: "ccemail") != nil) {
+            ccEmailTextField.text = defaults.string(forKey: "ccemail")
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -44,6 +64,15 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func doneAction(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(nameTextField.text, forKey: "name")
+        defaults.set(birthdayTextField.text, forKey: "birthday")
+        defaults.set(weightTextField.text, forKey: "weight")
+        defaults.set(heightTextField.text, forKey: "height")
+        defaults.set(doctorEmailTextField.text, forKey: "doctoremail")
+        defaults.set(ccEmailTextField.text, forKey: "ccemail")
+        UserDefaults.standard.synchronize()
+        
         self.dismiss(animated: true, completion: nil)
     }
     

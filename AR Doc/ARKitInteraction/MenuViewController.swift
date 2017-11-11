@@ -18,6 +18,27 @@ class MenuViewController: UIViewController {
         
         enterButton.layer.cornerRadius = 10
         settingsButton.layer.cornerRadius = 10
+        
+        let defaults = UserDefaults.standard
+        if (defaults.string(forKey: "name") == nil) {
+            defaults.set("", forKey: "name")
+        }
+        if (defaults.string(forKey: "birthday") == nil) {
+            defaults.set("", forKey: "birthday")
+        }
+        if (defaults.string(forKey: "weight") == nil) {
+            defaults.set("", forKey: "weight")
+        }
+        if (defaults.string(forKey: "height") == nil) {
+            defaults.set("", forKey: "height")
+        }
+        if (defaults.string(forKey: "doctoremail") == nil) {
+            defaults.set("", forKey: "doctoremail")
+        }
+        if (defaults.string(forKey: "ccemail") == nil) {
+            defaults.set("", forKey: "ccemail")
+        }
+        defaults.synchronize()
 
         // Do any additional setup after loading the view.
     }

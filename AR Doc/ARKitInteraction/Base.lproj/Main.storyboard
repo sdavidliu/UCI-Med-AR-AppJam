@@ -186,12 +186,12 @@
                                     <constraint firstAttribute="width" constant="100" id="taB-3v-Uqq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                <state key="normal" title="Done &gt;">
+                                <state key="normal" title="Skip &gt;">
                                     <color key="titleColor" red="0.97228109839999999" green="0.82683861260000002" blue="0.46657773850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="doneAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="PUV-B4-HkT"/>
-                                    <segue destination="LZ1-8P-cen" kind="show" id="7IX-eY-cqT"/>
+                                    <segue destination="LZ1-8P-cen" kind="show" identifier="finishAR" id="7IX-eY-cqT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -584,13 +584,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqC-4r-YSp">
-                                <rect key="frame" x="112" y="517" width="150" height="50"/>
+                                <rect key="frame" x="87" y="517" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.1983620673418045" green="0.32715216279029846" blue="0.47461602091789246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9dC-v3-RjB"/>
+                                    <constraint firstAttribute="width" constant="200" id="9dC-v3-RjB"/>
                                     <constraint firstAttribute="height" constant="50" id="IKi-nI-KH8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
                                 <state key="normal" title="Send Email">
                                     <color key="titleColor" red="0.97228109839999999" green="0.82683861260000002" blue="0.46657773850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -631,10 +631,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnu-Ek-Lyv">
-                                <rect key="frame" x="112" y="582" width="150" height="50"/>
+                                <rect key="frame" x="127.5" y="582" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.1983620673" green="0.32715216279999998" blue="0.47461602089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="9xc-fv-i1a"/>
+                                    <constraint firstAttribute="width" constant="120" id="9xc-fv-i1a"/>
                                     <constraint firstAttribute="height" constant="50" id="g30-Eb-KeR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
@@ -654,13 +654,13 @@
                             <constraint firstItem="cqC-4r-YSp" firstAttribute="top" secondItem="CcH-pz-Rgd" secondAttribute="bottom" constant="20" id="Fvs-FF-Q81"/>
                             <constraint firstItem="CcH-pz-Rgd" firstAttribute="width" secondItem="eD4-tE-1p0" secondAttribute="width" multiplier="0.9" id="QHX-N5-7ps"/>
                             <constraint firstItem="W1v-Ue-uce" firstAttribute="centerX" secondItem="bhf-Z2-yA3" secondAttribute="centerX" id="XWM-Mk-x8f"/>
-                            <constraint firstItem="tnu-Ek-Lyv" firstAttribute="centerX" secondItem="bhf-Z2-yA3" secondAttribute="centerX" id="Z1T-9s-Eza"/>
                             <constraint firstItem="tnu-Ek-Lyv" firstAttribute="top" secondItem="cqC-4r-YSp" secondAttribute="bottom" constant="15" id="ZKp-VY-AYQ"/>
                             <constraint firstItem="W1v-Ue-uce" firstAttribute="top" secondItem="uAU-qc-wjX" secondAttribute="bottom" id="apH-io-G9U"/>
                             <constraint firstItem="W1v-Ue-uce" firstAttribute="width" secondItem="eD4-tE-1p0" secondAttribute="width" multiplier="0.9" id="iMC-Lv-XGv"/>
                             <constraint firstItem="ROM-13-308" firstAttribute="top" secondItem="W1v-Ue-uce" secondAttribute="bottom" constant="10" id="mTy-NP-HNA"/>
                             <constraint firstItem="cqC-4r-YSp" firstAttribute="centerX" secondItem="bhf-Z2-yA3" secondAttribute="centerX" id="pkv-m3-WNQ"/>
                             <constraint firstItem="bhf-Z2-yA3" firstAttribute="bottom" secondItem="cqC-4r-YSp" secondAttribute="bottom" constant="100" id="pya-Zx-0ve"/>
+                            <constraint firstItem="tnu-Ek-Lyv" firstAttribute="centerX" secondItem="bhf-Z2-yA3" secondAttribute="centerX" id="qD8-X7-qU9"/>
                             <constraint firstItem="CcH-pz-Rgd" firstAttribute="centerX" secondItem="bhf-Z2-yA3" secondAttribute="centerX" id="qJm-D0-snv"/>
                             <constraint firstItem="uAU-qc-wjX" firstAttribute="top" secondItem="bhf-Z2-yA3" secondAttribute="top" id="sTd-Zv-okW"/>
                         </constraints>
@@ -672,6 +672,7 @@
                         <outlet property="summaryLabel" destination="W1v-Ue-uce" id="04d-aU-yo9"/>
                         <outlet property="summaryTextView" destination="CcH-pz-Rgd" id="aq0-8h-V81"/>
                         <segue destination="2h5-QA-LLQ" kind="unwind" identifier="unwindToViewController1" unwindAction="prepareForUnwindWithSegue:" id="6JJ-vr-Tm9"/>
+                        <segue destination="2h5-QA-LLQ" kind="unwind" identifier="unwindToAR" unwindAction="prepareForUnwindARWithSegue:" id="ykW-Qm-aKS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U4Z-rk-xyp" userLabel="First Responder" sceneMemberID="firstResponder"/>

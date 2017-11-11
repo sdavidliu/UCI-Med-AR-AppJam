@@ -58,6 +58,12 @@ extension ViewController: UIGestureRecognizerDelegate {
         statusViewController.cancelAllScheduledMessages()
 
         virtualObjectLoader.removeAllVirtualObjects()
+        
+        for node in drawingNodes {
+            node.removeFromParentNode()
+        }
+        drawingNodes.removeAll()
+        
         addObjectButton.setImage(#imageLiteral(resourceName: "add"), for: [])
         addObjectButton.setImage(#imageLiteral(resourceName: "addPressed"), for: [.highlighted])
         

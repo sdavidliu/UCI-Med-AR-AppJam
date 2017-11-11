@@ -38,6 +38,7 @@ class VirtualObjectInteraction: NSObject, UIGestureRecognizerDelegate {
         self.sceneView = sceneView
         super.init()
         
+        /*
         let panGesture = ThresholdPanGesture(target: self, action: #selector(didPan(_:)))
         panGesture.delegate = self
         
@@ -49,7 +50,7 @@ class VirtualObjectInteraction: NSObject, UIGestureRecognizerDelegate {
         // Add gestures to the `sceneView`.
         sceneView.addGestureRecognizer(panGesture)
         sceneView.addGestureRecognizer(rotationGesture)
-        sceneView.addGestureRecognizer(tapGesture)
+        sceneView.addGestureRecognizer(tapGesture)*/
     }
     
     // MARK: - Gesture Actions

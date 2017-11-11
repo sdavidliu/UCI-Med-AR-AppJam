@@ -55,6 +55,12 @@ class ViewController: UIViewController {
         return CGPoint(x: bounds.midX, y: bounds.midY)
     }
     
+    /// David's Drawing stuff
+    
+    var drawingNodes = [DynamicGeometryNode]()
+    
+    var isTouching = false
+    
     /// Convenience accessor for the session owned by ARSCNView.
     var session: ARSession {
         return sceneView.session
@@ -70,6 +76,10 @@ class ViewController: UIViewController {
         
         backButton.layer.cornerRadius = 10
         doneButton.layer.cornerRadius = 10
+        
+        let defaults = UserDefaults.standard
+        defaults.set(false, forKey: "picture")
+        UserDefaults.standard.synchronize()
 
         // Set up scene content.
         setupCamera()
@@ -216,12 +226,15 @@ class ViewController: UIViewController {
         }
         do {
             try data.write(to: directory.appendingPathComponent("fileName.png")!)
+            let defaults = UserDefaults.standard
+            defaults.set(true, forKey: "picture")
+            UserDefaults.standard.synchronize()
             print("sucessfully saved image")
-            return
         } catch {
             print(error.localizedDescription)
             return
         }
+        self.performSegue(withIdentifier: "finishAR", sender: self)
     }
     
     func getDocumentsDirectory() -> URL {

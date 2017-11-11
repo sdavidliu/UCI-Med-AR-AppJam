@@ -8,14 +8,26 @@ ARSCNViewDelegate interactions for `ViewController`.
 import ARKit
 
 extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
-    
+        
     // MARK: - ARSCNViewDelegate
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        
+        DispatchQueue.main.async {
+            if (self.isTouching) {
+                guard let currentDrawing = self.drawingNodes.last else {return}
+                let vertice = self.worldPositionForScreenCenter()
+                currentDrawing.addVertice(vertice)
+            }else{
+                self.virtualObjectInteraction.updateObjectToCurrentTrackingPosition()
+                self.updateFocusSquare()
+            }
+        }
+        /*
         DispatchQueue.main.async {
             self.virtualObjectInteraction.updateObjectToCurrentTrackingPosition()
             self.updateFocusSquare()
-        }
+        }*/
         
         // If light estimation is enabled, update the intensity of the model's lights and the environment map
         let baseIntensity: CGFloat = 40
@@ -81,6 +93,23 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
         }
     }
     
+    // MARK: - Touch Handlers
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let frame = sceneView.session.currentFrame else {return}
+        guard isReadyForDrawing(trackingState: frame.camera.trackingState) else {return}
+        
+        let drawingNode = DynamicGeometryNode(color: UIColor.blue, lineWidth: 0.002)
+        sceneView.scene.rootNode.addChildNode(drawingNode)
+        drawingNodes.append(drawingNode)
+        
+        isTouching = true
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        isTouching = false
+    }
+    
     func sessionWasInterrupted(_ session: ARSession) {
         blurView.isHidden = false
         statusViewController.showMessage("""
@@ -94,5 +123,30 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
         statusViewController.showMessage("RESETTING SESSION")
         
         restartExperience()
+    }
+    
+    // MARK: - Private
+    
+    private func reset() {
+        for node in drawingNodes {
+            node.removeFromParentNode()
+        }
+        drawingNodes.removeAll()
+    }
+    
+    private func isReadyForDrawing(trackingState: ARCamera.TrackingState) -> Bool {
+        switch trackingState {
+        case .normal:
+            return true
+        default:
+            return false
+        }
+    }
+    
+    private func worldPositionForScreenCenter() -> SCNVector3 {
+        let screenBounds = UIScreen.main.bounds
+        let center = CGPoint(x: screenBounds.midX, y: screenBounds.midY)
+        let centerVec3 = SCNVector3Make(Float(center.x), Float(center.y), 0.99)
+        return sceneView.unprojectPoint(centerVec3)
     }
 }

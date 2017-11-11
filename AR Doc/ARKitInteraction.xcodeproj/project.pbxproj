@@ -26,6 +26,11 @@
 		C8C12A711F29277B00B011FE /* ViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C12A701F29277B00B011FE /* ViewController+ARSCNViewDelegate.swift */; };
 		C8C2AC521F3A545C00E86BA3 /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C2AC511F3A545C00E86BA3 /* VirtualObjectInteraction.swift */; };
 		C8D71A001F3B7D3D0086AD64 /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D719FF1F3B7D3D0086AD64 /* VirtualObject.swift */; };
+		E8197D211FB6D0C90074630E /* DynamicGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8197D201FB6D0C90074630E /* DynamicGeometry.swift */; };
+		E8197D261FB6D19F0074630E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8197D221FB6D19E0074630E /* Common.swift */; };
+		E8197D271FB6D19F0074630E /* SceneKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8197D231FB6D19E0074630E /* SceneKitUtils.swift */; };
+		E8197D281FB6D19F0074630E /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8197D241FB6D19F0074630E /* ARPlaneAnchor+Visualize.swift */; };
+		E8197D291FB6D19F0074630E /* VirtualObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8197D251FB6D19F0074630E /* VirtualObjectNode.swift */; };
 		E83AE5741FB562EC00C4425C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5731FB562EC00C4425C /* MenuViewController.swift */; };
 		E83AE5761FB5646800C4425C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5751FB5646800C4425C /* SettingsViewController.swift */; };
 		E83AE5781FB574F500C4425C /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5771FB574F500C4425C /* SummaryViewController.swift */; };
@@ -55,6 +60,11 @@
 		C8C2AC511F3A545C00E86BA3 /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
 		C8D719FF1F3B7D3D0086AD64 /* VirtualObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
 		E5D46016DF144A3D9292F48C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		E8197D201FB6D0C90074630E /* DynamicGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicGeometry.swift; sourceTree = "<group>"; };
+		E8197D221FB6D19E0074630E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		E8197D231FB6D19E0074630E /* SceneKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitUtils.swift; sourceTree = "<group>"; };
+		E8197D241FB6D19F0074630E /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
+		E8197D251FB6D19F0074630E /* VirtualObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectNode.swift; sourceTree = "<group>"; };
 		E83AE5731FB562EC00C4425C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E83AE5751FB5646800C4425C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E83AE5771FB574F500C4425C /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +153,11 @@
 				C8C2AC511F3A545C00E86BA3 /* VirtualObjectInteraction.swift */,
 				C812D8671F47628300344E73 /* ThresholdPanGesture.swift */,
 				C46356661EF9CC480080C8D9 /* VirtualObjectARView.swift */,
+				E8197D201FB6D0C90074630E /* DynamicGeometry.swift */,
+				E8197D241FB6D19F0074630E /* ARPlaneAnchor+Visualize.swift */,
+				E8197D221FB6D19E0074630E /* Common.swift */,
+				E8197D231FB6D19E0074630E /* SceneKitUtils.swift */,
+				E8197D251FB6D19F0074630E /* VirtualObjectNode.swift */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* Focus Square */,
 				1488324B1EFC3EBF0043E0AB /* Additional View Controllers */,
@@ -254,20 +269,25 @@
 			files = (
 				C812D8681F47628300344E73 /* ThresholdPanGesture.swift in Sources */,
 				11BD822A1F09D750003F11C8 /* ViewController+ObjectSelection.swift in Sources */,
+				E8197D291FB6D19F0074630E /* VirtualObjectNode.swift in Sources */,
 				1488323F1EFC378A0043E0AB /* ViewController+Actions.swift in Sources */,
 				3929C48E1E89EC2C00E00B60 /* ViewController.swift in Sources */,
 				C41366B91EB80DD400EC054A /* StatusViewController.swift in Sources */,
 				39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */,
 				147062641F06FA790003EE03 /* VirtualObjectSelection.swift in Sources */,
 				E83AE5741FB562EC00C4425C /* MenuViewController.swift in Sources */,
+				E8197D261FB6D19F0074630E /* Common.swift in Sources */,
 				C8C12A711F29277B00B011FE /* ViewController+ARSCNViewDelegate.swift in Sources */,
 				C8C2AC521F3A545C00E86BA3 /* VirtualObjectInteraction.swift in Sources */,
 				C46356671EF9CC500080C8D9 /* VirtualObjectARView.swift in Sources */,
+				E8197D271FB6D19F0074630E /* SceneKitUtils.swift in Sources */,
 				148832411EFC3B250043E0AB /* FocusSquareSegment.swift in Sources */,
 				E83AE5761FB5646800C4425C /* SettingsViewController.swift in Sources */,
+				E8197D281FB6D19F0074630E /* ARPlaneAnchor+Visualize.swift in Sources */,
 				C8D71A001F3B7D3D0086AD64 /* VirtualObject.swift in Sources */,
 				C42A71BD1E9C0AF200944367 /* FocusSquare.swift in Sources */,
 				3929C48C1E89EC2C00E00B60 /* AppDelegate.swift in Sources */,
+				E8197D211FB6D0C90074630E /* DynamicGeometry.swift in Sources */,
 				C46356681EF9CC530080C8D9 /* VirtualObjectLoader.swift in Sources */,
 				E83AE5781FB574F500C4425C /* SummaryViewController.swift in Sources */,
 			);
