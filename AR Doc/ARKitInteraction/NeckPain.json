@@ -1,0 +1,45 @@
+{
+  "questions": [
+    {
+      "id": "neck1",
+      "header": "Question 1",
+      "question": "Pain intensity on scale of 0-5?",
+      "question_type": "single_select",
+      "options": [
+        "0. I have no pain at the moment.",
+        "1. The pain is very mild at the moment.",
+        "2. The pain comes and goes and is moderate.",
+        "3. The pain is fairly severe at the moment.",
+        "4. The pain is very severe at the moment.",
+        "5. The pain is the worst imaginable at the moment.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "neck2",
+      "header": "Question 2",
+      "question": "How have you been sleeping",
+      "question_type": "single_select",
+      "options": [
+        "0. I have no trouble sleeping.",
+        "1. My sleep is slightly disturbed (less than 1 hour sleepless).",
+        "2. My sleep is mildly disturbed (1-2 hours sleepless).",
+        "3. My sleep is moderately disturbed (2-3 hours sleepless).",
+        "4. My sleep is greatly disturbed (3-5 hours sleepless).",
+        "5. My sleep is completely disturbed (5-7 hours sleepless).",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

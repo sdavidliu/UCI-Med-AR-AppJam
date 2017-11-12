@@ -16,15 +16,23 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var summaryTextView: UITextView!
+    var results = [String:Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(results)
         
         sendEmailButton.layer.cornerRadius = 10
         homeButton.layer.cornerRadius = 10
         backButton.layer.cornerRadius = 10
         
-        summaryLabel.text = "Summary: Back pain\nLocation: Lower back\nRadiation: No\nSeverity (on scale of 10): 7\nOnset: 2 weeks ago\nDuration: 30 minutes\nFrequency: 3 times a day\nProgression: More frequently each day\nSymptoms: Pain in muscles and bones. Occasional muscle spasms. Back Joint dysfunction."
+        //summaryLabel.text = "Summary: Back pain\nLocation: Lower back\nRadiation: No\nSeverity (on scale of 10): 7\nOnset: 2 weeks ago\nDuration: 30 minutes\nFrequency: 3 times a day\nProgression: More frequently each day\nSymptoms: Pain in muscles and bones. Occasional muscle spasms. Back Joint dysfunction."
+        var summaryText = "Questionnaire Results:\n"
+        for r in results {
+            summaryText += r.key + ": " + (r.value as! String) + "\n"
+        }
+        summaryLabel.text = summaryText
         summaryLabel.sizeToFit()
         
         summaryTextView.layer.cornerRadius = 10
@@ -77,7 +85,7 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
                 basicInfo = "Basic Info:\n" + basicInfo + "\n"
             }
             if (summaryTextView.text != "") {
-                otherComments = "\n\nOther comments:\n" + summaryTextView.text
+                otherComments = "\nOther comments:\n" + summaryTextView.text
             }
             
             let mail = MFMailComposeViewController()
