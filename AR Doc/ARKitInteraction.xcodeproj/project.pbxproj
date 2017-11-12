@@ -34,6 +34,7 @@
 		E83AE5741FB562EC00C4425C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5731FB562EC00C4425C /* MenuViewController.swift */; };
 		E83AE5761FB5646800C4425C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5751FB5646800C4425C /* SettingsViewController.swift */; };
 		E83AE5781FB574F500C4425C /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5771FB574F500C4425C /* SummaryViewController.swift */; };
+		E877473C1FB7E94200C00B2F /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E877473B1FB7E94200C00B2F /* ColorSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		E83AE5731FB562EC00C4425C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E83AE5751FB5646800C4425C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E83AE5771FB574F500C4425C /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		E877473B1FB7E94200C00B2F /* ColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
 		EDEAD543F9C5D3E64B9CC319 /* SampleCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				E8197D221FB6D19E0074630E /* Common.swift */,
 				E8197D231FB6D19E0074630E /* SceneKitUtils.swift */,
 				E8197D251FB6D19F0074630E /* VirtualObjectNode.swift */,
+				E877473B1FB7E94200C00B2F /* ColorSlider.swift */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* Focus Square */,
 				1488324B1EFC3EBF0043E0AB /* Additional View Controllers */,
@@ -289,6 +292,7 @@
 				3929C48C1E89EC2C00E00B60 /* AppDelegate.swift in Sources */,
 				E8197D211FB6D0C90074630E /* DynamicGeometry.swift in Sources */,
 				C46356681EF9CC530080C8D9 /* VirtualObjectLoader.swift in Sources */,
+				E877473C1FB7E94200C00B2F /* ColorSlider.swift in Sources */,
 				E83AE5781FB574F500C4425C /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,7 @@ extension ViewController: UIGestureRecognizerDelegate {
         
         addObjectButton.isHidden = true
         pictureButton.isHidden = false
+        colorSlider.isHidden = false
         
         virtualObjectLoader.loadVirtualObject(object, loadedHandler: { [unowned self] loadedObject in
             DispatchQueue.main.async {

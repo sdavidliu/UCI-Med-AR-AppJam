@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var pictureButton: UIButton!
     
+    @IBOutlet weak var colorSlider: ColorSlider!
+    
     // MARK: - UI Elements
     
     var focusSquare = FocusSquare()
@@ -68,6 +70,8 @@ class ViewController: UIViewController {
         return sceneView.session
     }
     
+    let test = ColorSlider()
+    
     // MARK: - View Controller Life Cycle
     
     override func viewDidLoad() {
@@ -78,6 +82,9 @@ class ViewController: UIViewController {
         
         backButton.layer.cornerRadius = 10
         doneButton.layer.cornerRadius = 10
+        
+        colorSlider.orientation = .horizontal
+        colorSlider.previewEnabled = true
         
         let defaults = UserDefaults.standard
         defaults.set(false, forKey: "picture")

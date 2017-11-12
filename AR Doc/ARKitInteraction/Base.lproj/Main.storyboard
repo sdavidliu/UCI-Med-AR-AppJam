@@ -194,9 +194,18 @@
                                     <segue destination="LZ1-8P-cen" kind="show" identifier="finishAR" id="7IX-eY-cqT"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W1-if-zSj" customClass="ColorSlider" customModule="ARKitInteraction" customModuleProvider="target">
+                                <rect key="frame" x="18.5" y="554" width="337.5" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eTX-1m-uku"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xcf-ic-uGo" firstAttribute="top" secondItem="2W1-if-zSj" secondAttribute="bottom" constant="20" id="DEA-6R-rhl"/>
+                            <constraint firstItem="2W1-if-zSj" firstAttribute="centerX" secondItem="GBj-4O-Whc" secondAttribute="centerX" id="DfR-3P-jdz"/>
                             <constraint firstItem="3cb-dQ-oXx" firstAttribute="width" secondItem="xcf-ic-uGo" secondAttribute="width" constant="-5" id="Fg7-D6-Eh5"/>
                             <constraint firstAttribute="trailing" secondItem="R5W-V8-6lY" secondAttribute="trailing" id="J42-1v-Ihf"/>
                             <constraint firstItem="3cb-dQ-oXx" firstAttribute="centerX" secondItem="xcf-ic-uGo" secondAttribute="centerX" id="KPf-Pf-2mp"/>
@@ -210,6 +219,7 @@
                             <constraint firstItem="h1G-5z-Dh9" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="cww-ue-1O1"/>
                             <constraint firstItem="3cb-dQ-oXx" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="dtP-zr-OKq"/>
                             <constraint firstItem="R5W-V8-6lY" firstAttribute="top" secondItem="RLh-bf-1c3" secondAttribute="top" id="fDn-zw-Oo2"/>
+                            <constraint firstItem="2W1-if-zSj" firstAttribute="width" secondItem="RLh-bf-1c3" secondAttribute="width" multiplier="0.9" id="hwV-4n-piF"/>
                             <constraint firstItem="6DR-J4-Vpg" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="iVj-hb-fKq"/>
                             <constraint firstAttribute="bottom" secondItem="E6c-py-dvH" secondAttribute="bottom" id="kLb-BI-xJ4"/>
                             <constraint firstItem="GBj-4O-Whc" firstAttribute="trailing" secondItem="xcf-ic-uGo" secondAttribute="trailing" constant="163.5" id="kN8-Ve-Xqq"/>
@@ -228,6 +238,7 @@
                         <outlet property="addObjectButton" destination="xcf-ic-uGo" id="uFa-W2-4Iu"/>
                         <outlet property="backButton" destination="h1G-5z-Dh9" id="Y1g-OD-gbV"/>
                         <outlet property="blurView" destination="R5W-V8-6lY" id="oF2-lD-Srf"/>
+                        <outlet property="colorSlider" destination="2W1-if-zSj" id="fd0-AS-43c"/>
                         <outlet property="doneButton" destination="nxI-FN-csi" id="thn-xJ-dfk"/>
                         <outlet property="pictureButton" destination="6DR-J4-Vpg" id="OcD-xe-YZ7"/>
                         <outlet property="sceneView" destination="E6c-py-dvH" id="Gr4-Uw-Z4A"/>

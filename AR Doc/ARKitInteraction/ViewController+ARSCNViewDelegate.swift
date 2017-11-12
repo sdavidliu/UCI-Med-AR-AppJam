@@ -101,7 +101,7 @@ extension ViewController: ARSCNViewDelegate, ARSessionDelegate {
         guard isReadyForDrawing(trackingState: frame.camera.trackingState) else {return}
         
         if (hasModel == true) {
-            let drawingNode = DynamicGeometryNode(color: UIColor.blue, lineWidth: 0.002)
+            let drawingNode = DynamicGeometryNode(color: colorSlider.color, lineWidth: 0.002)
             sceneView.scene.rootNode.addChildNode(drawingNode)
             drawingNodes.append(drawingNode)
         }
