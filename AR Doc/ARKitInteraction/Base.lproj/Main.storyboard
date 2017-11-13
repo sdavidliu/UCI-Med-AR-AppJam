@@ -139,6 +139,13 @@
                                     <segue destination="ri3-7p-e6d" kind="embed" id="uiU-1f-e8S"/>
                                 </connections>
                             </containerView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Am7-Iy-eSm">
+                                <rect key="frame" x="172" y="328.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZYN-cF-QDO"/>
+                                    <constraint firstAttribute="width" constant="30" id="c8E-bt-Q1v"/>
+                                </constraints>
+                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DR-J4-Vpg">
                                 <rect key="frame" x="162" y="603" width="50" height="50"/>
                                 <constraints>
@@ -222,6 +229,7 @@
                             <constraint firstItem="h1G-5z-Dh9" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="cww-ue-1O1"/>
                             <constraint firstItem="3cb-dQ-oXx" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="dtP-zr-OKq"/>
                             <constraint firstItem="R5W-V8-6lY" firstAttribute="top" secondItem="RLh-bf-1c3" secondAttribute="top" id="fDn-zw-Oo2"/>
+                            <constraint firstItem="Am7-Iy-eSm" firstAttribute="centerY" secondItem="GBj-4O-Whc" secondAttribute="centerY" id="hFW-j8-Vjf"/>
                             <constraint firstItem="2W1-if-zSj" firstAttribute="width" secondItem="RLh-bf-1c3" secondAttribute="width" multiplier="0.9" id="hwV-4n-piF"/>
                             <constraint firstItem="6DR-J4-Vpg" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="iVj-hb-fKq"/>
                             <constraint firstAttribute="bottom" secondItem="E6c-py-dvH" secondAttribute="bottom" id="kLb-BI-xJ4"/>
@@ -233,6 +241,7 @@
                             <constraint firstItem="nxI-FN-csi" firstAttribute="centerY" secondItem="xcf-ic-uGo" secondAttribute="centerY" id="uOK-XR-6lx"/>
                             <constraint firstItem="GBj-4O-Whc" firstAttribute="bottom" secondItem="xcf-ic-uGo" secondAttribute="bottom" constant="15" id="w7D-gO-FfL"/>
                             <constraint firstItem="E6c-py-dvH" firstAttribute="leading" secondItem="GBj-4O-Whc" secondAttribute="leading" id="wEL-Op-yTe"/>
+                            <constraint firstItem="Am7-Iy-eSm" firstAttribute="centerX" secondItem="GBj-4O-Whc" secondAttribute="centerX" id="wlf-CG-lwA"/>
                             <constraint firstItem="GBj-4O-Whc" firstAttribute="trailing" secondItem="tnx-rc-95S" secondAttribute="trailing" id="yUU-ir-Rk1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GBj-4O-Whc"/>
@@ -241,6 +250,7 @@
                         <outlet property="addObjectButton" destination="xcf-ic-uGo" id="uFa-W2-4Iu"/>
                         <outlet property="backButton" destination="h1G-5z-Dh9" id="Y1g-OD-gbV"/>
                         <outlet property="blurView" destination="R5W-V8-6lY" id="oF2-lD-Srf"/>
+                        <outlet property="colorIndicator" destination="Am7-Iy-eSm" id="xqB-sR-hgk"/>
                         <outlet property="colorSlider" destination="2W1-if-zSj" id="fd0-AS-43c"/>
                         <outlet property="doneButton" destination="nxI-FN-csi" id="thn-xJ-dfk"/>
                         <outlet property="pictureButton" destination="6DR-J4-Vpg" id="OcD-xe-YZ7"/>

@@ -27,9 +27,16 @@ extension ViewController: UIGestureRecognizerDelegate {
         
         //print(object.modelName)
         
+        if (lastPictureNode != nil) {
+            lastPictureNode?.removeFromParentNode()
+        }
+        
         addObjectButton.isHidden = true
+        addObjectButton.isEnabled = false
         pictureButton.isHidden = false
+        pictureButton.isEnabled = true
         colorSlider.isHidden = false
+        colorIndicator.isHidden = false
         
         virtualObjectLoader.loadVirtualObject(object, loadedHandler: { [unowned self] loadedObject in
             DispatchQueue.main.async {
@@ -71,10 +78,15 @@ extension ViewController: UIGestureRecognizerDelegate {
         
         addObjectButton.setImage(#imageLiteral(resourceName: "add"), for: [])
         addObjectButton.setImage(#imageLiteral(resourceName: "addPressed"), for: [.highlighted])
+        addObjectButton.isEnabled = true
         
         pictureButton.isHidden = true
+        pictureButton.isEnabled = false
+        colorIndicator.isHidden = true
 
         resetTracking()
+        
+        self.statusViewController.showMessage("INITIALIZING")
 
         // Disable restart for a while in order to give the session time to restart.
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {

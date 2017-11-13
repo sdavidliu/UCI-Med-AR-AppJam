@@ -43,7 +43,7 @@ class MasterViewController: UITableViewController {
         //self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: yellow]
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        //searchController.searchBar.backgroundColor = lightBlue
+        //searchController.searchBar.backgroundColor = blueColor
         UISearchBar.appearance().tintColor = blueColor
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.blue
         

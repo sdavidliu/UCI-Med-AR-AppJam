@@ -63,7 +63,7 @@ extension ViewController: VirtualObjectSelectionViewControllerDelegate {
         
         addObjectButton.setImage(#imageLiteral(resourceName: "buttonring"), for: [])
 
-        addObjectButton.isEnabled = false
+        //addObjectButton.isEnabled = false
         isRestartAvailable = false
     }
 

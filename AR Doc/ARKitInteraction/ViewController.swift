@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorSlider: ColorSlider!
     
+    @IBOutlet weak var colorIndicator: UIButton!
     // MARK: - UI Elements
     
     var focusSquare = FocusSquare()
@@ -72,8 +73,6 @@ class ViewController: UIViewController {
         return sceneView.session
     }
     
-    let test = ColorSlider()
-    
     // MARK: - View Controller Life Cycle
     
     override func viewDidLoad() {
@@ -87,6 +86,11 @@ class ViewController: UIViewController {
         
         colorSlider.orientation = .horizontal
         colorSlider.previewEnabled = true
+        
+        colorIndicator.layer.cornerRadius = 15
+        colorIndicator.backgroundColor = colorSlider.color
+        colorIndicator.layer.borderColor = UIColor.white.cgColor
+        colorIndicator.layer.borderWidth = 2
         
         let defaults = UserDefaults.standard
         defaults.set(false, forKey: "picture")
@@ -112,6 +116,8 @@ class ViewController: UIViewController {
             self.restartExperience()
         }
         
+        colorSlider.addTarget(self, action: #selector(changedColor(_:)), for: .valueChanged)
+        
         //let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showVirtualObjectSelectionViewController))
         // Set the delegate to ensure this gesture is only used when there are no virtual objects in the scene.
         //tapGesture.delegate = self
@@ -123,6 +129,10 @@ class ViewController: UIViewController {
 		
 		// Prevent the screen from being dimmed to avoid interuppting the AR experience.
 		UIApplication.shared.isIdleTimerDisabled = true
+        
+        //David delete?
+        addObjectButton.setImage(#imageLiteral(resourceName: "add"), for: [])
+        addObjectButton.setImage(#imageLiteral(resourceName: "addPressed"), for: [.highlighted])
 
         // Start the `ARSession`.
         resetTracking()
@@ -259,7 +269,7 @@ class ViewController: UIViewController {
             try data.write(to: directory.appendingPathComponent("fileName.png")!)
             defaults.set(true, forKey: "picture")
             UserDefaults.standard.synchronize()
-            doneButton.titleLabel?.text = "Next>"
+            doneButton.setTitle("Next>", for: .normal)
             print("sucessfully saved image")
         } catch {
             print(error.localizedDescription)
@@ -288,5 +298,9 @@ class ViewController: UIViewController {
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
+    }
+    
+    @objc func changedColor(_ slider: ColorSlider) {
+        colorIndicator.backgroundColor = slider.color
     }
 }
