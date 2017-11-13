@@ -1,0 +1,111 @@
+{
+  "questions": [
+    {
+      "id": "Individual attacks per month",
+      "header": "Question 1",
+      "question": "Over the past 2 months, how many individual attacks have you averaged per month?",
+      "question_type": "single_select",
+      "options": [
+        "None",
+        "1-5 times",
+        "5-10 times",
+        "10-20 times",
+        "20-30 times",
+        "More than 30 times",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Length of a typical headache",
+      "header": "Question 2",
+      "question": "How long does a typical headache attack last?",
+      "question_type": "single_select",
+      "options": [
+        "0-1 hours",
+        "1-6 hours",
+        "6-12 hours",
+        "12-24 hours",
+        "24-48 hours",
+        "More than 48 hours",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Recent change in frequency",
+      "header": "Question 3",
+      "question": "Has there been any recent change in the character or frequency of your headaches?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Factors that trigger headache",
+      "header": "Question 4",
+      "question": "Check any of the following factors which seem to trigger a headache attack in you:",
+      "question_type": "multi_select",
+      "options": [
+        "Alcohol",
+        "Menstruation",
+        "Emotional stress",
+        "Odors",
+        "Fatigue",
+        "Missing Meals",
+        "Caffeine",
+        "Changes in weather",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Have headaches ever been incapacitating",
+      "header": "Question 5",
+      "question": "Are your headaches ever incapacitating (e.g., have to leave work/school or lie down undisturbed)?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Pain severity",
+      "header": "Question 6",
+      "question": "Indicate the severity of your pain on scale of 0-5:",
+      "question_type": "single_select",
+      "options": [
+        "0. I have no pain at the moment.",
+        "1. The pain is very mild at the moment.",
+        "2. The pain comes and goes and is moderate.",
+        "3. The pain is fairly severe at the moment.",
+        "4. The pain is very severe at the moment.",
+        "5. The pain is the worst imaginable at the moment.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

@@ -1,0 +1,127 @@
+{
+  "questions": [
+    {
+      "id": "How long have rash",
+      "header": "Question 1",
+      "question": "How long have you had the rash?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Where is rash",
+      "header": "Question 2",
+      "question": "Where is the rash and where did it start?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Skin rash pattern",
+      "header": "Question 3",
+      "question": "Skin rash pattern?",
+      "question_type": "multi_select",
+      "options": [
+        "Blotchy",
+        "Purple",
+        "Red streak",
+        "Linear marks",
+        "Circular",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Skin rash qualities",
+      "header": "Question 4",
+      "question": "Skin rash qualities?",
+      "question_type": "multi_select",
+      "options": [
+        "Flaking",
+        "Hard or spine-like",
+        "Red spots",
+        "Linear marks",
+        "Waxy",
+        "Itchy",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Rash made worse by",
+      "header": "Question 5",
+      "question": "Rash made worse by?",
+      "question_type": "multi_select",
+      "options": [
+        "Emotional stress",
+        "Warm, moist skin",
+        "Heat",
+        "Fasting or weight loss",
+        "Alcohol use",
+        "Smoking",
+        "Sun exposure",
+        "Skin contact with plants",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Contact with someone else with rash",
+      "header": "Question 6",
+      "question": "Have you had contact with anyone who also had a rash?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Maybe",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "History of skin disorders",
+      "header": "Question 7",
+      "question": "Have you had past history of skin disorders?",
+      "question_type": "multi_select",
+      "options": [
+        "Atopic dermatitis (eczema)",
+        "Hives",
+        "Scabies",
+        "Dermatitis herpetiformis",
+        "Asteatosis (dry skin)",
+        "No skin disorders",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Does rash itch",
+      "header": "Question 8",
+      "question": "Does the rash itch?",
+      "question_type": "single_select",
+      "options": [
+        "Yes, severe",
+        "Yes, moderate",
+        "Yes, mild",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

@@ -35,6 +35,16 @@
 		E83AE5761FB5646800C4425C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5751FB5646800C4425C /* SettingsViewController.swift */; };
 		E83AE5781FB574F500C4425C /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AE5771FB574F500C4425C /* SummaryViewController.swift */; };
 		E877473C1FB7E94200C00B2F /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E877473B1FB7E94200C00B2F /* ColorSlider.swift */; };
+		E87D5D8C1FB93F6B00DB5F64 /* Headache.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D8B1FB93F6A00DB5F64 /* Headache.json */; };
+		E87D5D8E1FB948F400DB5F64 /* Cough.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D8D1FB948F400DB5F64 /* Cough.json */; };
+		E87D5D901FB94C1600DB5F64 /* Dizziness.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D8F1FB94C1600DB5F64 /* Dizziness.json */; };
+		E87D5D921FB94E0B00DB5F64 /* Fever.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D911FB94E0B00DB5F64 /* Fever.json */; };
+		E87D5D941FB94FAA00DB5F64 /* BackPain.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D931FB94FAA00DB5F64 /* BackPain.json */; };
+		E87D5D961FB9583200DB5F64 /* Rash.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D951FB9583200DB5F64 /* Rash.json */; };
+		E87D5D981FB95A6900DB5F64 /* MusclePain.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D971FB95A6900DB5F64 /* MusclePain.json */; };
+		E87D5D9A1FB9609100DB5F64 /* Earache.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D991FB9609000DB5F64 /* Earache.json */; };
+		E87D5D9C1FB9627100DB5F64 /* AbdominalPain.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D9B1FB9627000DB5F64 /* AbdominalPain.json */; };
+		E87D5D9E1FB96A6600DB5F64 /* General.json in Resources */ = {isa = PBXBuildFile; fileRef = E87D5D9D1FB96A6600DB5F64 /* General.json */; };
 		E896EF531FB7EF9C00DC921E /* blue-down-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E896EF1B1FB7EF9B00DC921E /* blue-down-button.png */; };
 		E896EF541FB7EF9C00DC921E /* blue-down-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E896EF1C1FB7EF9B00DC921E /* blue-down-button@2x.png */; };
 		E896EF551FB7EF9C00DC921E /* blue-radio-button-deselected-white.png in Resources */ = {isa = PBXBuildFile; fileRef = E896EF1D1FB7EF9B00DC921E /* blue-radio-button-deselected-white.png */; };
@@ -128,6 +138,16 @@
 		E83AE5751FB5646800C4425C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E83AE5771FB574F500C4425C /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		E877473B1FB7E94200C00B2F /* ColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
+		E87D5D8B1FB93F6A00DB5F64 /* Headache.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Headache.json; sourceTree = "<group>"; };
+		E87D5D8D1FB948F400DB5F64 /* Cough.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cough.json; sourceTree = "<group>"; };
+		E87D5D8F1FB94C1600DB5F64 /* Dizziness.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dizziness.json; sourceTree = "<group>"; };
+		E87D5D911FB94E0B00DB5F64 /* Fever.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Fever.json; sourceTree = "<group>"; };
+		E87D5D931FB94FAA00DB5F64 /* BackPain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BackPain.json; sourceTree = "<group>"; };
+		E87D5D951FB9583200DB5F64 /* Rash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rash.json; sourceTree = "<group>"; };
+		E87D5D971FB95A6900DB5F64 /* MusclePain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MusclePain.json; sourceTree = "<group>"; };
+		E87D5D991FB9609000DB5F64 /* Earache.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Earache.json; sourceTree = "<group>"; };
+		E87D5D9B1FB9627000DB5F64 /* AbdominalPain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AbdominalPain.json; sourceTree = "<group>"; };
+		E87D5D9D1FB96A6600DB5F64 /* General.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = General.json; sourceTree = "<group>"; };
 		E896EF1B1FB7EF9B00DC921E /* blue-down-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-down-button.png"; sourceTree = "<group>"; };
 		E896EF1C1FB7EF9B00DC921E /* blue-down-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-down-button@2x.png"; sourceTree = "<group>"; };
 		E896EF1D1FB7EF9B00DC921E /* blue-radio-button-deselected-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-radio-button-deselected-white.png"; sourceTree = "<group>"; };
@@ -280,6 +300,16 @@
 				E877473B1FB7E94200C00B2F /* ColorSlider.swift */,
 				E896EF891FB7F09A00DC921E /* ExampleQuestions.json */,
 				E896EF911FB80D8900DC921E /* NeckPain.json */,
+				E87D5D8B1FB93F6A00DB5F64 /* Headache.json */,
+				E87D5D8D1FB948F400DB5F64 /* Cough.json */,
+				E87D5D8F1FB94C1600DB5F64 /* Dizziness.json */,
+				E87D5D911FB94E0B00DB5F64 /* Fever.json */,
+				E87D5D931FB94FAA00DB5F64 /* BackPain.json */,
+				E87D5D951FB9583200DB5F64 /* Rash.json */,
+				E87D5D971FB95A6900DB5F64 /* MusclePain.json */,
+				E87D5D991FB9609000DB5F64 /* Earache.json */,
+				E87D5D9B1FB9627000DB5F64 /* AbdominalPain.json */,
+				E87D5D9D1FB96A6600DB5F64 /* General.json */,
 				E896EF8B1FB7F09B00DC921E /* MyViewController.swift */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* Focus Square */,
@@ -463,26 +493,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				E896EF571FB7EF9C00DC921E /* blue-radio-button-selected-white.png in Resources */,
+				E87D5D8C1FB93F6B00DB5F64 /* Headache.json in Resources */,
 				E896EF5A1FB7EF9C00DC921E /* blue-tick-box-not-ticked-white@2x.png in Resources */,
 				E896EF561FB7EF9C00DC921E /* blue-radio-button-deselected-white@2x.png in Resources */,
+				E87D5D901FB94C1600DB5F64 /* Dizziness.json in Resources */,
 				E896EF851FB7EF9C00DC921E /* TextFieldTableViewCell.xib in Resources */,
 				E896EF711FB7EF9C00DC921E /* DynamicLabelTableViewCell.xib in Resources */,
+				E87D5D961FB9583200DB5F64 /* Rash.json in Resources */,
 				E896EF801FB7EF9C00DC921E /* TableRowHeaderTableViewCell.xib in Resources */,
 				E896EF921FB80D8A00DC921E /* NeckPain.json in Resources */,
+				E87D5D9E1FB96A6600DB5F64 /* General.json in Resources */,
 				E896EF5C1FB7EF9C00DC921E /* blue-tick-box-ticked-white@2x.png in Resources */,
+				E87D5D921FB94E0B00DB5F64 /* Fever.json in Resources */,
 				E896EF541FB7EF9C00DC921E /* blue-down-button@2x.png in Resources */,
+				E87D5D9A1FB9609100DB5F64 /* Earache.json in Resources */,
 				E896EF731FB7EF9C00DC921E /* DynamicLabelTextFieldTableViewCell.xib in Resources */,
+				E87D5D9C1FB9627100DB5F64 /* AbdominalPain.json in Resources */,
 				E896EF8C1FB7F09B00DC921E /* ExampleQuestions.json in Resources */,
 				E896EF581FB7EF9C00DC921E /* blue-radio-button-selected-white@2x.png in Resources */,
 				E896EF7E1FB7EF9C00DC921E /* SubmitButtonTableViewCell.xib in Resources */,
 				3929C49F1E89EE4400E00B60 /* Models.scnassets in Resources */,
 				E896EF5B1FB7EF9C00DC921E /* blue-tick-box-ticked-white.png in Resources */,
+				E87D5D981FB95A6900DB5F64 /* MusclePain.json in Resources */,
 				E896EF761FB7EF9C00DC921E /* OptionTableViewCell.xib in Resources */,
 				E896EF6F1FB7EF9C00DC921E /* DatePickerViewController.xib in Resources */,
 				39D8DC1B1E8ADAE600386B05 /* LaunchScreen.storyboard in Resources */,
 				E896EF591FB7EF9C00DC921E /* blue-tick-box-not-ticked-white.png in Resources */,
 				3929C4931E89EC2C00E00B60 /* Assets.xcassets in Resources */,
 				E896EF551FB7EF9C00DC921E /* blue-radio-button-deselected-white.png in Resources */,
+				E87D5D8E1FB948F400DB5F64 /* Cough.json in Resources */,
 				E896EF531FB7EF9C00DC921E /* blue-down-button.png in Resources */,
 				3929C4911E89EC2C00E00B60 /* Main.storyboard in Resources */,
 				E896EF821FB7EF9C00DC921E /* TableRowTableViewCell.xib in Resources */,
@@ -490,6 +529,7 @@
 				E896EF7C1FB7EF9C00DC921E /* SelectSegmentTableViewCell.xib in Resources */,
 				E896EF7A1FB7EF9C00DC921E /* PickerViewController.xib in Resources */,
 				E896EF781FB7EF9C00DC921E /* OtherOptionTableViewCell.xib in Resources */,
+				E87D5D941FB94FAA00DB5F64 /* BackPain.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

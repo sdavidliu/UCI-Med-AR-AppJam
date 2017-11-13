@@ -1,0 +1,111 @@
+{
+  "questions": [
+    {
+      "id": "Temperature",
+      "header": "Question 1",
+      "question": "Temperature:",
+      "question_type": "single_select",
+      "options": [
+        "99.0 F - 100.9 F (mild)",
+        "101.0 F - 103.5 F (moderate)",
+        "Over 103.5 F (high)",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Fever worsens with",
+      "header": "Question 2",
+      "question": "What made the fever worse?",
+      "question_type": "single_select",
+      "options": [
+        "Heat",
+        "Intravenous drug use",
+        "Dehydration",
+        "Physical activity",
+        "Doesn't get worse",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Does fever get better with dringing fluids",
+      "header": "Question 3",
+      "question": "Does fever get better with drinking fluids?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Does fever get better with rest",
+      "header": "Question 4",
+      "question": "Does fever get better with rest?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Traveled outside of US recently",
+      "header": "Question 5",
+      "question": "Have you recently traveled outside of the continental US?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Sore throat recently",
+      "header": "Question 6",
+      "question": "Do you have history of recent sore throat?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Recent dental procedure",
+      "header": "Question 7",
+      "question": "Have you recently had a dental procedure?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

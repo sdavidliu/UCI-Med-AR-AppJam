@@ -30,7 +30,13 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
         //summaryLabel.text = "Summary: Back pain\nLocation: Lower back\nRadiation: No\nSeverity (on scale of 10): 7\nOnset: 2 weeks ago\nDuration: 30 minutes\nFrequency: 3 times a day\nProgression: More frequently each day\nSymptoms: Pain in muscles and bones. Occasional muscle spasms. Back Joint dysfunction."
         var summaryText = "Questionnaire Results:\n"
         for r in results {
-            summaryText += r.key + ": " + (r.value as! String) + "\n"
+            if let answer = r.value as? String {
+                summaryText += r.key + ": " + answer + "\n"
+            }else if let answer = r.value as? Array<String>{
+                summaryText += r.key + ": " + answer.joined(separator: ", ") + "\n"
+            }else if let answer = r.value as? Dictionary<String,Any>{
+                summaryText += r.key + ": " + (answer["Other"] as! String) + "\n"
+            }
         }
         summaryLabel.text = summaryText
         summaryLabel.sizeToFit()

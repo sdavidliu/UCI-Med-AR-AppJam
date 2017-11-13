@@ -1,0 +1,129 @@
+{
+  "questions": [
+    {
+      "id": "When it started",
+      "header": "Question 1",
+      "question": "When did your pain start?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Frequency",
+      "header": "Question 2",
+      "question": "How often do you get the pain per week?",
+      "question_type": "single_select",
+      "options": [
+        "1-5 times",
+        "5-10 times",
+        "10-20 times",
+        "20-30 times",
+        "More than 30 times",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Length of pain",
+      "header": "Question 3",
+      "question": "How long does the pain last?",
+      "question_type": "single_select",
+      "options": [
+        "0-1 hours",
+        "1-6 hours",
+        "6-12 hours",
+        "12-24 hours",
+        "24-48 hours",
+        "More than 48 hours",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Eating",
+      "header": "Question 4",
+      "question": "Does eating make the pain worse, better, or no change?",
+      "question_type": "single_select",
+      "options": [
+        "Makes pain worse",
+        "Makes pain better",
+        "No change",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Pain intensity",
+      "header": "Question 5",
+      "question": "Describe the intensity of the pain:",
+      "question_type": "single_select",
+      "options": [
+        "I have no pain.",
+        "The pain is very mild.",
+        "The pain comes and goes and is moderate.",
+        "The pain is fairly severe.",
+        "The pain is very severe.",
+        "The pain is the worst imaginable.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Excess gas or bloating",
+      "header": "Question 6",
+      "question": "Do you have excess gas or bloating?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Nausea or vomiting",
+      "header": "Question 7",
+      "question": "Have you had any nausea or vomiting?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Traveled recently",
+      "header": "Question 8",
+      "question": "Have you traveled recently or have you drank well water?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

@@ -30,6 +30,13 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         doctorEmailTextField.delegate = self
         ccEmailTextField.delegate = self
         
+        nameTextField.layer.cornerRadius = 10
+        birthdayTextField.layer.cornerRadius = 10
+        weightTextField.layer.cornerRadius = 10
+        heightTextField.layer.cornerRadius = 10
+        doctorEmailTextField.layer.cornerRadius = 10
+        ccEmailTextField.layer.cornerRadius = 10
+        
         let defaults = UserDefaults.standard
         if (defaults.string(forKey: "name") != nil) {
             nameTextField.text = defaults.string(forKey: "name")

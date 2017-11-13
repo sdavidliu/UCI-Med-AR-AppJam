@@ -25,10 +25,10 @@ import UIKit
 class MasterViewController: UITableViewController {
     
     // MARK: - Properties
-    var symptoms = [Symptom(name: "Headache", category: "cat1", file: "NeckPain"), Symptom(name: "Neck Pain", category: "cat1", file: "NeckPain"), Symptom(name: "Back Pain", category: "cat2", file: "NeckPain")]
+    var symptoms = [Symptom(name: "General", category: "All", file: "General"), Symptom(name: "Abdominal Pain", category: "Physical Pain", file: "AbdominalPain"), Symptom(name: "Back Pain", category: "Physical Pain", file: "BackPain"), Symptom(name: "Cough", category: "Symptoms", file: "Cough"), Symptom(name: "Dizziness", category: "Symptoms", file: "Dizziness"), Symptom(name: "Earache", category: "Phsyical Pain", file: "Earache"), Symptom(name: "Fever", category: "Symptoms", file: "Fever"), Symptom(name: "Headache", category: "Symptoms", file: "Headache"), Symptom(name: "Muscle Pain", category: "Physical Pain", file: "MusclePain"), Symptom(name: "Neck Pain", category: "Physical Pain", file: "NeckPain"), Symptom(name: "Rash", category: "Physical Pain", file: "Rash")]
     var filteredSymptoms = [Symptom]()
     let searchController = UISearchController(searchResultsController: nil)
-    let greenColor = UIColor(red: 94.0/255.0, green: 210.0/255.0, blue: 163.0/255.0, alpha: 1.0)
+    let blueColor = UIColor(red: 100.0/255.0, green: 157.0/255.0, blue: 230.0/255.0, alpha: 1.0)
     
     // MARK: - View Setup
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class MasterViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         //searchController.searchBar.backgroundColor = lightBlue
-        UISearchBar.appearance().tintColor = greenColor
+        UISearchBar.appearance().tintColor = blueColor
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = UIColor.blue
         
         searchController.searchResultsUpdater = self
@@ -55,8 +55,15 @@ class MasterViewController: UITableViewController {
         searchController.hidesNavigationBarDuringPresentation = false
         
         // Setup the Scope Bar
-        searchController.searchBar.scopeButtonTitles = ["All", "cat1", "cat2"]
+        searchController.searchBar.scopeButtonTitles = ["All", "Physical Pain", "Symptoms"]
         searchController.searchBar.delegate = self
+        
+        let backbutton = UIButton(type: .custom)
+        backbutton.setTitle("Done", for: .normal)
+        backbutton.setTitleColor(backbutton.tintColor, for: .normal) // You can change the TitleColor
+        backbutton.addTarget(self, action: #selector(self.backAction(_:)), for: .touchUpInside)
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: backbutton)
         
     }
     
@@ -113,6 +120,10 @@ class MasterViewController: UITableViewController {
             return categoryMatch && s.name.lowercased().contains(searchText.lowercased())
         })
         tableView.reloadData()
+    }
+    
+    @IBAction func backAction(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "masterUnwind", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

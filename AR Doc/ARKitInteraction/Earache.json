@@ -1,0 +1,121 @@
+{
+  "questions": [
+    {
+      "id": "How long have eachache",
+      "header": "Question 1",
+      "question": "How long have you had the ear pain?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Skin rash pattern",
+      "header": "Question 2",
+      "question": "Where exactly do you experience the pain?",
+      "question_type": "single_select",
+      "options": [
+        "In ear",
+        "Behind ear",
+        "Below ear",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Have had recent respiratory tract infection",
+      "header": "Question 3",
+      "question": "Have you had a recent upper respiratory tract infection? (e.g., sore throat, runny nose, sinusitis)",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Been swimming recently",
+      "header": "Question 4",
+      "question": "Have you been swimming recently?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Any trauma to ear canal",
+      "header": "Question 5",
+      "question": "Has there been any trauma to the ear canal?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Put anything in ear canal",
+      "header": "Question 6",
+      "question": "Have you put anything into the ear canal?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Redness around hole for ear ring",
+      "header": "Question 7",
+      "question": "Is there redness around a hole for an ear ring?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Does not apply",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Diving or flying recently",
+      "header": "Question 8",
+      "question": "Have you been diving or flying recently?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

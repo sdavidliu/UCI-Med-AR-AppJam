@@ -1,0 +1,186 @@
+{
+  "questions": [
+    {
+      "id": "General Health",
+      "header": "Question 1",
+      "question": "In general, would you say your health is:",
+      "question_type": "single_select",
+      "options": [
+        "Excellent",
+        "Very good",
+        "Good",
+        "Fair",
+        "Poor",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Quality of life",
+      "header": "Question 2",
+      "question": "In general, would you say your quality of life is:",
+      "question_type": "single_select",
+      "options": [
+        "Excellent",
+        "Very good",
+        "Good",
+        "Fair",
+        "Poor",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Physical Health",
+      "header": "Question 3",
+      "question": "In general, how would you rate your physical health:",
+      "question_type": "single_select",
+      "options": [
+        "Excellent",
+        "Very good",
+        "Good",
+        "Fair",
+        "Poor",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Mental Health",
+      "header": "Question 4",
+      "question": "In general, how would you rate your mental health:",
+      "question_type": "single_select",
+      "options": [
+        "Excellent",
+        "Very good",
+        "Good",
+        "Fair",
+        "Poor",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "How much pain intefere with daily activities last week",
+      "header": "Question 5",
+      "question": "In the past 7 days, how much did pain interfere with your day to day activities?",
+      "question_type": "single_select",
+      "options": [
+        "Not at all",
+        "A little bit",
+        "Somewhat",
+        "Quite a bit",
+        "Very much",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Bothered by over last 2 weeks",
+      "header": "Question 6",
+      "question": "Over the last 2 weeks, what problems have you been bothered by?",
+      "question_type": "multi_select",
+      "options": [
+        "Little interest in doing things",
+        "Feeling down, depressed, or hopeless",
+        "Feeling anxious, nervous, or on edge",
+        "Not being able to stop or control worrying",
+        "Feeling angry",
+        "Feeling lonely",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Trouble falling asleep",
+      "header": "Question 7",
+      "question": "Do you often have trouble falling asleep or staying asleep?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "Not sure",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Exercise per week",
+      "header": "Question 8",
+      "question": "On average, how many days per week to you exercise?",
+      "question_type": "single_select",
+      "options": [
+        "0 days",
+        "1 day",
+        "2 days",
+        "3 days",
+        "4 days",
+        "5 days",
+        "6 days",
+        "7 days",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Minutes of exercise",
+      "header": "Question 9",
+      "question": "On days you do physical activities, how many minutes do you exercise on average?",
+      "question_type": "single_select",
+      "options": [
+        "10 minutes",
+        "20 minutes",
+        "30 minutes",
+        "45 minutes",
+        "60 minutes",
+        "90 minutes",
+        "120 minutes",
+        "150+ minutes",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Servings of fruit per day",
+      "header": "Question 10",
+      "question": "How many servings of fruits and begetables do you eat in a typical day?",
+      "question_type": "single_select",
+      "options": [
+        "0 servings",
+        "1 serving",
+        "2 servings",
+        "3 servings",
+        "4 servings",
+        "5+ servings",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

@@ -1,17 +1,17 @@
 {
   "questions": [
     {
-      "id": "neck1",
+      "id": "Pain intensity",
       "header": "Question 1",
-      "question": "Pain intensity on scale of 0-5?",
+      "question": "What is the pain intensity?",
       "question_type": "single_select",
       "options": [
-        "0. I have no pain at the moment.",
-        "1. The pain is very mild at the moment.",
-        "2. The pain comes and goes and is moderate.",
-        "3. The pain is fairly severe at the moment.",
-        "4. The pain is very severe at the moment.",
-        "5. The pain is the worst imaginable at the moment.",
+        "I have no pain at the moment.",
+        "The pain is very mild at the moment.",
+        "The pain comes and goes and is moderate.",
+        "The pain is fairly severe at the moment.",
+        "The pain is very severe at the moment.",
+        "The pain is the worst imaginable at the moment.",
         {
           "title": "Other",
           "type": "freeform"
@@ -19,17 +19,71 @@
       ]
     },
     {
-      "id": "neck2",
+      "id": "Sleeping",
       "header": "Question 2",
-      "question": "How have you been sleeping",
+      "question": "How have you been sleeping?",
       "question_type": "single_select",
       "options": [
-        "0. I have no trouble sleeping.",
-        "1. My sleep is slightly disturbed (less than 1 hour sleepless).",
-        "2. My sleep is mildly disturbed (1-2 hours sleepless).",
-        "3. My sleep is moderately disturbed (2-3 hours sleepless).",
-        "4. My sleep is greatly disturbed (3-5 hours sleepless).",
-        "5. My sleep is completely disturbed (5-7 hours sleepless).",
+        "I have no trouble sleeping.",
+        "My sleep is slightly disturbed (less than 1 hour sleepless).",
+        "My sleep is mildly disturbed (1-2 hours sleepless).",
+        "My sleep is moderately disturbed (2-3 hours sleepless).",
+        "My sleep is greatly disturbed (3-5 hours sleepless).",
+        "My sleep is completely disturbed (5-7 hours sleepless).",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Work",
+      "header": "Question 3",
+      "question": "How have you been working?",
+      "question_type": "single_select",
+      "options": [
+        "I can do as much work as I want.",
+        "I can only do my usual work but no more.",
+        "I can only do most of my usual work but no more.",
+        "I cannot do my usual work.",
+        "I can hardly do any work at all.",
+        "I cannot do any work at all.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Personal Care",
+      "header": "Question 4",
+      "question": "How have you been taking care of yourself?",
+      "question_type": "single_select",
+      "options": [
+        "I can look after myself normally without causing extra pain.",
+        "I can look after myself normally but it causes extra pain.",
+        "It is painful to look after myself and I am slow and careful.",
+        "I need some help but I manage most of my personal care.",
+        "I need help every day in most aspects of self care.",
+        "I do not get dressed, I wash with difficulty and stay in bed.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Headaches",
+      "header": "Question 5",
+      "question": "Do you have any headaches?",
+      "question_type": "single_select",
+      "options": [
+        "I have no headaches at all.",
+        "I have slight headaches which come infrequently.",
+        "I have moderate headaches which come infrequently.",
+        "I have moderate headaches which come frequently.",
+        "I have severe headaches which come frequently.",
+        "I have headaches almost all the time.",
         {
           "title": "Other",
           "type": "freeform"

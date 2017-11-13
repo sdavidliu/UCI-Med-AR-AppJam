@@ -19,7 +19,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.38317164780000001" green="0.82552319770000004" blue="0.63923853639999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARlogo" translatesAutoresizingMaskIntoConstraints="NO" id="g2b-FF-j8H">
+                                <rect key="frame" x="62" y="145" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="boJ-cN-gsL"/>
+                                    <constraint firstAttribute="height" constant="250" id="pJS-4z-6fx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45615783333778381" green="0.65471470355987549" blue="0.91771978139877319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="g2b-FF-j8H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fPp-7Q-WQO"/>
+                            <constraint firstItem="g2b-FF-j8H" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="125" id="xfG-a7-TRQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -27,4 +40,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ARlogo" width="500" height="500"/>
+    </resources>
 </document>

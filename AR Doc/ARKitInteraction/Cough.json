@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "id": "How long has it been occuring",
+      "header": "Question 1",
+      "question": "How long have you had the cough?",
+      "question_type": "single_select",
+      "options": [
+        "Less than a day",
+        "2-6 days",
+        "1-2 weeks",
+        "2-4 weeks",
+        "More than 1 month",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Time of day cough occurs",
+      "header": "Question 2",
+      "question": "When does the cough occur?",
+      "question_type": "single_select",
+      "options": [
+        "Morning",
+        "Daytime",
+        "Evening",
+        "Middle of the night",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Medication taken",
+      "header": "Question 3",
+      "question": "What have you taken for it, and did it help?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Produce phlegm",
+      "header": "Question 4",
+      "question": "Does your cough produce any phlegm? If yes, what color?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Current have",
+      "header": "Question 5",
+      "question": "Do you have any of the following?",
+      "question_type": "multi_select",
+      "options": [
+        "Sore throat",
+        "Post nasal drainage",
+        "Allergies",
+        "Dry mouth or dry eyes",
+        "Sinus problems",
+        "Trouble swallowing",
+        "Recent excessive weight loss",
+        "Shortness of breath",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

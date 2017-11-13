@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "id": "Where is the muscle pain",
+      "header": "Question 1",
+      "question": "Where does the muscle pain occur?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "When first have muscle pain",
+      "header": "Question 2",
+      "question": "When did you first have muscle pain?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "When last have muscle pain",
+      "header": "Question 3",
+      "question": "When did you last have muscle pain?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "How often and how long does it last",
+      "header": "Question 4",
+      "question": "How often do you get symptoms of muscle pain and how long do the symptoms or episodes last?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "What movements/activities make pain worse",
+      "header": "Question 5",
+      "question": "What movements or activities make your pain worse?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Pain intensity",
+      "header": "Question 6",
+      "question": "Pain intensity on scale of 0-5?",
+      "question_type": "single_select",
+      "options": [
+        "0. I have no pain at the moment.",
+        "1. The pain is very mild at the moment.",
+        "2. The pain comes and goes and is moderate.",
+        "3. The pain is fairly severe at the moment.",
+        "4. The pain is very severe at the moment.",
+        "5. The pain is the worst imaginable at the moment.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Does pain limit ability to do daily activities",
+      "header": "Question 7",
+      "question": "Does your condition limit your ability to work or carry out your normal daily activities?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

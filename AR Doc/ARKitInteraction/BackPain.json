@@ -1,0 +1,108 @@
+{
+  "questions": [
+    {
+      "id": "Pain description",
+      "header": "Question 1",
+      "question": "How would you describe your pain?",
+      "question_type": "single_select",
+      "options": [
+        "Sharp or stabbing",
+        "Buring or stinging",
+        "None of the above",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Pain intensity",
+      "header": "Question 2",
+      "question": "Pain intensity on scale of 0-5?",
+      "question_type": "single_select",
+      "options": [
+        "0. I have no pain at the moment.",
+        "1. The pain is very mild at the moment.",
+        "2. The pain comes and goes and is moderate.",
+        "3. The pain is fairly severe at the moment.",
+        "4. The pain is very severe at the moment.",
+        "5. The pain is the worst imaginable at the moment.",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "When it started",
+      "header": "Question 3",
+      "question": "When did your pain start?",
+      "question_type": "single_text_field",
+      "label": "Answer:"
+    },
+    {
+      "id": "Gradual pain or sudden pain",
+      "header": "Question 4",
+      "question": "Was it gradual pain or sudden pain?",
+      "question_type": "single_select",
+      "options": [
+        "Gradual pain",
+        "Sudden pain",
+        "None of the above",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Do any heavy physical work",
+      "header": "Question 5",
+      "question": "Do you do heavy physical work?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Exercise regularly",
+      "header": "Question 6",
+      "question": "Do you do exercise regularly?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    },
+    {
+      "id": "Any previous back injury",
+      "header": "Question 7",
+      "question": "Have you had any previous accidents or injuries involving the back?",
+      "question_type": "single_select",
+      "options": [
+        "Yes",
+        "No",
+        {
+          "title": "Other",
+          "type": "freeform"
+        }
+      ]
+    }
+  ],
+  "submit": {
+    "button_title": "Submit Answers",
+    "url": "https://www.example.com"
+  },
+  "auto_focus_text": true
+}

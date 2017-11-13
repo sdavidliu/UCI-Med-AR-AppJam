@@ -65,6 +65,8 @@ class ViewController: UIViewController {
     
     var hasModel = false
     
+    var lastPictureNode: SCNNode?
+    
     /// Convenience accessor for the session owned by ARSCNView.
     var session: ARSession {
         return sceneView.session
@@ -238,6 +240,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func takePicture(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        /*
+        if (defaults.bool(forKey: "picture") == true) {
+            let last = sceneView.scene.rootNode.childNodes.count
+            sceneView.scene.rootNode.childNodes[last - 1].removeFromParentNode()
+        }*/
+ 
         let image = self.sceneView.snapshot()
         guard let data = UIImageJPEGRepresentation(image, 1) ?? UIImagePNGRepresentation(image) else {
             return
@@ -247,15 +257,32 @@ class ViewController: UIViewController {
         }
         do {
             try data.write(to: directory.appendingPathComponent("fileName.png")!)
-            let defaults = UserDefaults.standard
             defaults.set(true, forKey: "picture")
             UserDefaults.standard.synchronize()
+            doneButton.titleLabel?.text = "Next>"
             print("sucessfully saved image")
         } catch {
             print(error.localizedDescription)
             return
         }
-        self.performSegue(withIdentifier: "finishAR", sender: self)
+        
+        if (lastPictureNode != nil) {
+            lastPictureNode?.removeFromParentNode()
+        }
+        
+        guard let pov = sceneView.pointOfView else {
+            return
+        }
+        let imagePlane = SCNPlane(width: sceneView.bounds.width / 6000, height: sceneView.bounds.height / 6000)
+        imagePlane.firstMaterial?.diffuse.contents = sceneView.snapshot()
+        imagePlane.firstMaterial?.lightingModel = .constant
+        let planeNode = SCNNode(geometry: imagePlane)
+        lastPictureNode = planeNode
+        //planeNode.transform = SCNMatrix4MakeRotation(Float(-CGFloat.pi/2), 1, 0, 0)
+        sceneView.scene.rootNode.addChildNode(planeNode)
+        planeNode.transform = SCNMatrix4MakeTranslation(pov.transform.m41, pov.transform.m42, pov.transform.m43 - 0.2)
+        
+        //self.performSegue(withIdentifier: "finishAR", sender: self)
     }
     
     func getDocumentsDirectory() -> URL {
