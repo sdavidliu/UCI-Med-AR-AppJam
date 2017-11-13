@@ -52,6 +52,9 @@ class Simeon: UIViewController {
         else {
             sim.text = "Simeon"
         }
+        //UIApplication.shared.openURL(URL(string: "http://maps.apple.com/?address=1600,PennsylvaniaAve.,20500")!)
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/?q=Hospital")!, options: [:], completionHandler: nil)
+
     }
     /*
     // MARK: - Navigation

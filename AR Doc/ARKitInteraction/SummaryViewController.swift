@@ -118,6 +118,18 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func hospitalAction(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/?q=Hospital")!, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func pharmacyAction(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/?q=Pharmacy")!, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func dentistAction(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/?q=Dentist")!, options: [:], completionHandler: nil)
+    }
+    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
