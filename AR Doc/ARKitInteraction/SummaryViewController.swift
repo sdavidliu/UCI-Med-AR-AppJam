@@ -91,7 +91,7 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
                 basicInfo = "Basic Info:\n" + basicInfo + "\n"
             }
             if (summaryTextView.text != "") {
-                otherComments = "\nOther comments:\n" + summaryTextView.text
+                otherComments = "\nAdditional information:\n" + summaryTextView.text
             }
             
             let mail = MFMailComposeViewController()
@@ -127,7 +127,7 @@ class SummaryViewController: UIViewController, MFMailComposeViewControllerDelega
     }
     
     @IBAction func dentistAction(_ sender: Any) {
-        UIApplication.shared.open(URL(string: "http://maps.apple.com/?q=Dentist")!, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string: "http://maps.apple.com/?q=Physical+Therapy")!, options: [:], completionHandler: nil)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {

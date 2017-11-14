@@ -7,7 +7,7 @@
       "question_type": "single_select",
       "options": [
         "Sharp or stabbing",
-        "Buring or stinging",
+        "Burning or stinging",
         "None of the above",
         {
           "title": "Other",
