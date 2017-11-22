@@ -21,4 +21,4 @@
 ![AR](https://raw.githubusercontent.com/sdavidliu/UCI-Med-AR-AppJam/master/Screenshots/2.PNG)
 ![Symptoms](https://raw.githubusercontent.com/sdavidliu/UCI-Med-AR-AppJam/master/Screenshots/3.PNG)
 ![Summary](https://raw.githubusercontent.com/sdavidliu/UCI-Med-AR-AppJam/master/Screenshots/4.PNG)
-![Nearby](https://raw.githubusercontent.com/sdavidliu/UCI-Med-AR-AppJam/master/Screenshots/5.png)
+![Nearby](https://raw.githubusercontent.com/sdavidliu/UCI-Med-AR-AppJam/master/Screenshots/5.PNG)
