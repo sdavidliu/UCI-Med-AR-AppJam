@@ -23,9 +23,12 @@ extension ViewController: UIGestureRecognizerDelegate {
         
         //let virtualObjectLoader = VirtualObjectLoader()
         
-        let object = VirtualObject.availableObjects[5]
-        
-        //print(object.modelName)
+        var object = VirtualObject.availableObjects[0]
+        for o in VirtualObject.availableObjects {
+            if (o.modelName == "human"){
+                object = o
+            }
+        }
         
         if (lastPictureNode != nil) {
             lastPictureNode?.removeFromParentNode()

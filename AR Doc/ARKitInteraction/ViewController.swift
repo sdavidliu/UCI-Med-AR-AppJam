@@ -271,6 +271,7 @@ class ViewController: UIViewController {
             UserDefaults.standard.synchronize()
             doneButton.setTitle("Next>", for: .normal)
             print("sucessfully saved image")
+            statusViewController.showMessage("PICTURE SUCCESSFULLY SAVED")
         } catch {
             print(error.localizedDescription)
             return
@@ -279,6 +280,8 @@ class ViewController: UIViewController {
         if (lastPictureNode != nil) {
             lastPictureNode?.removeFromParentNode()
         }
+        
+        
         
         guard let pov = sceneView.pointOfView else {
             return
